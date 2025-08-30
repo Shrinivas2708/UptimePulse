@@ -2,7 +2,7 @@ import { Router } from 'express';
 import { getIncidents, getIncident, createIncident, updateIncident,addIncidentUpdate } from '../controllers/incidentController';
 import authMiddleware from '../utils/authMiddleware';
 
-const router = Router();
+const router: Router = Router();
 router.use(authMiddleware);
 
 router.get('/', getIncidents);

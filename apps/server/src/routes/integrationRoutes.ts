@@ -11,7 +11,7 @@ import {
 } from '../controllers/integrationController';
 import authMiddleware from '../utils/authMiddleware';
 
-const router = Router();
+const router : Router= Router();
 router.use(authMiddleware);
 
 // Standard Integrations

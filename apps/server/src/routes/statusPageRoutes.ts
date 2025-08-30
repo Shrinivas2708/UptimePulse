@@ -4,7 +4,7 @@ import { getStatusPages, createStatusPage, updateStatusPage, deleteStatusPage, g
 import authMiddleware from '../utils/authMiddleware';
 import { addCustomDomain, deleteCustomDomain, getCustomDomainForStatusPage, verifyCustomDomain } from '../controllers/customDomainController';
 
-const router = Router();
+const router : Router= Router();
 
 // ✨ NEW: Public route for viewing status pages by slug. NO AUTH MIDDLEWARE. ✨
 router.get('/public/:slug', getPublicStatusPage);

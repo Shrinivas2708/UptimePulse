@@ -21,14 +21,14 @@ const settingsSchema = z.object({
   interval: z.coerce.number().min(60, "Interval must be at least 1 minute."),
 });
 
-type MonitorSettingsForm = {
-    name: string;
-    url: string;
-    expectedStatusCodes: string;
-    // ✨ Add interval to the form type
-    interval: number;
-};
-
+// type MonitorSettingsForm = {
+//     name: string;
+//     url: string;
+//     expectedStatusCodes: string;
+//     // ✨ Add interval to the form type
+//     interval: number;
+// };
+type MonitorSettingsForm = z.infer<typeof settingsSchema>;
 export const Route = createFileRoute('/dashboard/monitors/$monitorId/settings')({
   component: SettingsComponent,
 });
@@ -45,8 +45,8 @@ function SettingsComponent() {
     });
     const isPro = userProfile?.tier === 'pro' || userProfile?.subscription.planType === 'lifetime';
 
-    const { register, handleSubmit, control, formState: { errors } } = useForm<MonitorSettingsForm>({
-        resolver: zodResolver(settingsSchema),
+    const { register, handleSubmit, control, formState: { errors } } = useForm<z.infer<typeof settingsSchema>>({
+        resolver: zodResolver(settingsSchema) as any,
         defaultValues: {
             name: monitor.name,
             url: monitor.url,

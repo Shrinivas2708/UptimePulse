@@ -7,7 +7,7 @@ import jwt from "jsonwebtoken";
 // Import the IUser type from your models
 import { IUser } from '../models/User';
 const frontendUrl = process.env.FRONTEND_URL || 'http://localhost:5173';
-const router = Router();
+const router : Router = Router();
 
 router.post('/register', register);
 router.post('/login', login);

@@ -2,7 +2,7 @@ import { Router } from 'express';
 import { createRazorpayOrder, verifyRazorpayPayment } from '../controllers/paymentController';
 import authMiddleware from '../utils/authMiddleware';
 
-const router = Router();
+const router: Router = Router();
 router.use(authMiddleware);
 
 router.post('/create-order', createRazorpayOrder);

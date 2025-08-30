@@ -40,7 +40,7 @@ function CreateMonitorComponent() {
     handleSubmit,
     control,
     formState: { errors },
-  } = useForm<MonitorFormData>({
+  } = useForm({
     resolver: zodResolver(monitorSchema),
     defaultValues: {
       interval: 300,

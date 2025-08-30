@@ -12,13 +12,13 @@
   "dependencies": {
     "@dnd-kit/core": "^6.3.1",
     "@dnd-kit/sortable": "^10.0.0",
+    "@dnd-kit/utilities": "^3.2.2",
     "@headlessui/react": "^2.2.7",
     "@hookform/resolvers": "^5.2.1",
     "@tabler/icons-react": "^3.34.1",
     "@tanstack/react-query": "^5.85.5",
     "@tanstack/react-router": "^1.131.27",
     "@tanstack/router-devtools": "^1.131.27",
-    "@types/date-fns": "^2.5.3",
     "axios": "^1.11.0",
     "clsx": "^2.1.1",
     "date-fns": "^4.1.0",
@@ -32,6 +32,7 @@
     "socket.io-client": "^4.8.1",
     "sonner": "^2.0.7",
     "tailwind-merge": "^3.3.1",
+    "zod": "^4.1.5",
     "zustand": "^5.0.8"
   },
   "devDependencies": {
