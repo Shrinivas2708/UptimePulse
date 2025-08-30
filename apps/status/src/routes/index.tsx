@@ -6,8 +6,14 @@ export const Route = createFileRoute('/')({
 
 function StatusLandingPageComponent() {
   return (
-    <div className="bg-[#0c0a09] text-white min-h-screen flex flex-col items-center justify-center p-4">
-      <div className="text-center max-w-2xl">
+    <div className="bg-[#0c0a09] relative text-white min-h-screen flex flex-col items-center justify-center p-4">
+      <div
+        className="absolute inset-0 z-0 pointer-events-none hidden md:block"
+        style={{
+          background: "radial-gradient(ellipse 60% 20% at 50% 0%, rgba(16, 185, 129, 0.25), transparent 70%), #0c0a09",
+        }}
+      />
+      <div className="text-center max-w-2xl z-20">
         <img 
           src="/logo.svg" 
           alt="UptimePulse Logo" 
