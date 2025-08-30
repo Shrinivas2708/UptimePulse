@@ -1,0 +1,49 @@
+{
+  "name": "uptimepulse-backend",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node dist/server.js",
+    "dev": "ts-node src/server.ts",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@types/bcrypt": "^6.0.0",
+    "@types/express": "^5.0.3",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node-cron": "^3.0.11",
+    "@types/nodemailer": "^7.0.1",
+    "axios": "^1.7.7",
+    "bcrypt": "^5.1.1",
+    "bullmq": "^5.13.3",
+    "cors": "^2.8.5",
+    "date-fns": "^4.1.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "express-session": "^1.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.7.0",
+    "nanoid": "^5.1.5",
+    "node-cron": "^3.0.3",
+    "nodemailer": "^7.0.5",
+    "passport": "^0.7.0",
+    "passport-google-oauth20": "^2.0.0",
+    "razorpay": "^2.9.6",
+    "redis": "^4.7.0",
+    "socket.io": "^4.8.0",
+    "twilio": "^5.8.0",
+    "winston": "^3.17.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express-session": "^1.18.2",
+    "@types/node": "^22.15.3",
+    "@types/passport": "^1.0.17",
+    "@types/passport-google-oauth20": "^2.0.16",
+    "@types/winston": "^2.4.4",
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  }
+}

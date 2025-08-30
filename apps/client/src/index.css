@@ -1,0 +1,44 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{
+    background-color: #0c0a09;
+    color: white;
+}
+
+@layer components {
+  .input-style {
+    @apply flex h-10 w-full bg-[#0c0a09] rounded-md border border-white/10 px-3 py-2 text-sm ring-offset-[#22c55e] placeholder:text-[#a1a1aa] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-offset-1;
+  }
+  .btn-primary {
+    @apply bg-[#22c55e] hover:bg-[#22c55e]/90 text-white font-bold py-2 px-4 rounded-md flex items-center gap-2;
+  }
+  /* ✨ NEW STYLE FOR FILTER/PAGINATION BUTTONS */
+  .btn-secondary {
+    @apply bg-[#1c1917] hover:bg-[#292524] text-white/80 font-bold py-2 px-4 rounded-md flex items-center gap-2 border border-white/10 disabled:opacity-50;
+  }
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #131211; /* Sidebar background color */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #292524; /* A slightly lighter, contrasting color */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3a38; /* Color on hover */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #292524 #131211;
+}
