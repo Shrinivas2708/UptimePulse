@@ -15,7 +15,6 @@ body{
   .btn-primary {
     @apply bg-[#22c55e] hover:bg-[#22c55e]/90 text-white font-bold py-2 px-4 rounded-md flex items-center gap-2;
   }
-  /* ✨ NEW STYLE FOR FILTER/PAGINATION BUTTONS */
   .btn-secondary {
     @apply bg-[#1c1917] hover:bg-[#292524] text-white/80 font-bold py-2 px-4 rounded-md flex items-center gap-2 border border-white/10 disabled:opacity-50;
   }
@@ -25,19 +24,18 @@ body{
 }
 
 ::-webkit-scrollbar-track {
-  background: #131211; /* Sidebar background color */
+  background: #131211;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #292524; /* A slightly lighter, contrasting color */
+  background: #292524;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #3f3a38; /* Color on hover */
+  background: #3f3a38;
 }
 
-/* For Firefox */
 * {
   scrollbar-width: thin;
   scrollbar-color: #292524 #131211;

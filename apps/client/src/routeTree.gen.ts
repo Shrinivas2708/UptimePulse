@@ -8,853 +8,853 @@
 // You should NOT make any changes in this file as it will be overwritten.
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
-import { Route as rootRouteImport } from './routes/__root'
-import { Route as SignupRouteImport } from './routes/signup'
-import { Route as LoginRouteImport } from './routes/login'
-import { Route as DashboardRouteRouteImport } from './routes/dashboard/route'
-import { Route as IndexRouteImport } from './routes/index'
-import { Route as DashboardIndexRouteImport } from './routes/dashboard/index'
-import { Route as DashboardUsersRouteImport } from './routes/dashboard/users'
-import { Route as DashboardStatusPagesRouteRouteImport } from './routes/dashboard/status-pages/route'
-import { Route as DashboardSettingsRouteRouteImport } from './routes/dashboard/settings/route'
-import { Route as DashboardMonitorsRouteRouteImport } from './routes/dashboard/monitors/route'
-import { Route as DashboardIntegrationsRouteRouteImport } from './routes/dashboard/integrations/route'
-import { Route as DashboardIncidentsRouteRouteImport } from './routes/dashboard/incidents/route'
-import { Route as DashboardStatusPagesIndexRouteImport } from './routes/dashboard/status-pages/index'
-import { Route as DashboardSettingsIndexRouteImport } from './routes/dashboard/settings/index'
-import { Route as DashboardMonitorsIndexRouteImport } from './routes/dashboard/monitors/index'
-import { Route as DashboardIntegrationsIndexRouteImport } from './routes/dashboard/integrations/index'
-import { Route as DashboardIncidentsIndexRouteImport } from './routes/dashboard/incidents/index'
-import { Route as DashboardStatusPagesNewRouteImport } from './routes/dashboard/status-pages/new'
-import { Route as DashboardSettingsGeneralRouteImport } from './routes/dashboard/settings/general'
-import { Route as DashboardSettingsDeleteRouteImport } from './routes/dashboard/settings/delete'
-import { Route as DashboardMonitorsNewRouteImport } from './routes/dashboard/monitors/new'
-import { Route as DashboardIntegrationsWebhookRouteImport } from './routes/dashboard/integrations/webhook'
-import { Route as DashboardIntegrationsTwiliosmsRouteImport } from './routes/dashboard/integrations/twiliosms'
-import { Route as DashboardIntegrationsTelegramRouteImport } from './routes/dashboard/integrations/telegram'
-import { Route as DashboardIntegrationsTeamsRouteImport } from './routes/dashboard/integrations/teams'
-import { Route as DashboardIntegrationsSlackRouteImport } from './routes/dashboard/integrations/slack'
-import { Route as DashboardIntegrationsPagerdutyRouteImport } from './routes/dashboard/integrations/pagerduty'
-import { Route as DashboardIntegrationsGooglechatRouteImport } from './routes/dashboard/integrations/googlechat'
-import { Route as DashboardIntegrationsEmailRouteImport } from './routes/dashboard/integrations/email'
-import { Route as DashboardIntegrationsDiscordRouteImport } from './routes/dashboard/integrations/discord'
-import { Route as DashboardIncidentsIncidentIdRouteImport } from './routes/dashboard/incidents/$incidentId'
-import { Route as AuthGoogleCallbackRouteImport } from './routes/auth.google.callback'
-import { Route as DashboardStatusPagesSlugRouteRouteImport } from './routes/dashboard/status-pages/$slug/route'
-import { Route as DashboardMonitorsMonitorIdRouteRouteImport } from './routes/dashboard/monitors/$monitorId/route'
-import { Route as DashboardStatusPagesSlugIndexRouteImport } from './routes/dashboard/status-pages/$slug/index'
-import { Route as DashboardMonitorsMonitorIdIndexRouteImport } from './routes/dashboard/monitors/$monitorId/index'
-import { Route as DashboardStatusPagesSlugMonitorsRouteImport } from './routes/dashboard/status-pages/$slug/monitors'
-import { Route as DashboardStatusPagesSlugDeleteRouteImport } from './routes/dashboard/status-pages/$slug/delete'
-import { Route as DashboardStatusPagesSlugCustomizationsRouteImport } from './routes/dashboard/status-pages/$slug/customizations'
-import { Route as DashboardMonitorsMonitorIdSettingsRouteImport } from './routes/dashboard/monitors/$monitorId/settings'
-import { Route as DashboardMonitorsMonitorIdNotificationsRouteImport } from './routes/dashboard/monitors/$monitorId/notifications'
-import { Route as DashboardMonitorsMonitorIdDeleteRouteImport } from './routes/dashboard/monitors/$monitorId/delete'
+import { Route as rootRouteImport } from "./routes/__root";
+import { Route as SignupRouteImport } from "./routes/signup";
+import { Route as LoginRouteImport } from "./routes/login";
+import { Route as DashboardRouteRouteImport } from "./routes/dashboard/route";
+import { Route as IndexRouteImport } from "./routes/index";
+import { Route as DashboardIndexRouteImport } from "./routes/dashboard/index";
+import { Route as DashboardUsersRouteImport } from "./routes/dashboard/users";
+import { Route as DashboardStatusPagesRouteRouteImport } from "./routes/dashboard/status-pages/route";
+import { Route as DashboardSettingsRouteRouteImport } from "./routes/dashboard/settings/route";
+import { Route as DashboardMonitorsRouteRouteImport } from "./routes/dashboard/monitors/route";
+import { Route as DashboardIntegrationsRouteRouteImport } from "./routes/dashboard/integrations/route";
+import { Route as DashboardIncidentsRouteRouteImport } from "./routes/dashboard/incidents/route";
+import { Route as DashboardStatusPagesIndexRouteImport } from "./routes/dashboard/status-pages/index";
+import { Route as DashboardSettingsIndexRouteImport } from "./routes/dashboard/settings/index";
+import { Route as DashboardMonitorsIndexRouteImport } from "./routes/dashboard/monitors/index";
+import { Route as DashboardIntegrationsIndexRouteImport } from "./routes/dashboard/integrations/index";
+import { Route as DashboardIncidentsIndexRouteImport } from "./routes/dashboard/incidents/index";
+import { Route as DashboardStatusPagesNewRouteImport } from "./routes/dashboard/status-pages/new";
+import { Route as DashboardSettingsGeneralRouteImport } from "./routes/dashboard/settings/general";
+import { Route as DashboardSettingsDeleteRouteImport } from "./routes/dashboard/settings/delete";
+import { Route as DashboardMonitorsNewRouteImport } from "./routes/dashboard/monitors/new";
+import { Route as DashboardIntegrationsWebhookRouteImport } from "./routes/dashboard/integrations/webhook";
+import { Route as DashboardIntegrationsTwiliosmsRouteImport } from "./routes/dashboard/integrations/twiliosms";
+import { Route as DashboardIntegrationsTelegramRouteImport } from "./routes/dashboard/integrations/telegram";
+import { Route as DashboardIntegrationsTeamsRouteImport } from "./routes/dashboard/integrations/teams";
+import { Route as DashboardIntegrationsSlackRouteImport } from "./routes/dashboard/integrations/slack";
+import { Route as DashboardIntegrationsPagerdutyRouteImport } from "./routes/dashboard/integrations/pagerduty";
+import { Route as DashboardIntegrationsGooglechatRouteImport } from "./routes/dashboard/integrations/googlechat";
+import { Route as DashboardIntegrationsEmailRouteImport } from "./routes/dashboard/integrations/email";
+import { Route as DashboardIntegrationsDiscordRouteImport } from "./routes/dashboard/integrations/discord";
+import { Route as DashboardIncidentsIncidentIdRouteImport } from "./routes/dashboard/incidents/$incidentId";
+import { Route as AuthGoogleCallbackRouteImport } from "./routes/auth.google.callback";
+import { Route as DashboardStatusPagesSlugRouteRouteImport } from "./routes/dashboard/status-pages/$slug/route";
+import { Route as DashboardMonitorsMonitorIdRouteRouteImport } from "./routes/dashboard/monitors/$monitorId/route";
+import { Route as DashboardStatusPagesSlugIndexRouteImport } from "./routes/dashboard/status-pages/$slug/index";
+import { Route as DashboardMonitorsMonitorIdIndexRouteImport } from "./routes/dashboard/monitors/$monitorId/index";
+import { Route as DashboardStatusPagesSlugMonitorsRouteImport } from "./routes/dashboard/status-pages/$slug/monitors";
+import { Route as DashboardStatusPagesSlugDeleteRouteImport } from "./routes/dashboard/status-pages/$slug/delete";
+import { Route as DashboardStatusPagesSlugCustomizationsRouteImport } from "./routes/dashboard/status-pages/$slug/customizations";
+import { Route as DashboardMonitorsMonitorIdSettingsRouteImport } from "./routes/dashboard/monitors/$monitorId/settings";
+import { Route as DashboardMonitorsMonitorIdNotificationsRouteImport } from "./routes/dashboard/monitors/$monitorId/notifications";
+import { Route as DashboardMonitorsMonitorIdDeleteRouteImport } from "./routes/dashboard/monitors/$monitorId/delete";
 
 const SignupRoute = SignupRouteImport.update({
-  id: '/signup',
-  path: '/signup',
+  id: "/signup",
+  path: "/signup",
   getParentRoute: () => rootRouteImport,
-} as any)
+} as any);
 const LoginRoute = LoginRouteImport.update({
-  id: '/login',
-  path: '/login',
+  id: "/login",
+  path: "/login",
   getParentRoute: () => rootRouteImport,
-} as any)
+} as any);
 const DashboardRouteRoute = DashboardRouteRouteImport.update({
-  id: '/dashboard',
-  path: '/dashboard',
+  id: "/dashboard",
+  path: "/dashboard",
   getParentRoute: () => rootRouteImport,
-} as any)
+} as any);
 const IndexRoute = IndexRouteImport.update({
-  id: '/',
-  path: '/',
+  id: "/",
+  path: "/",
   getParentRoute: () => rootRouteImport,
-} as any)
+} as any);
 const DashboardIndexRoute = DashboardIndexRouteImport.update({
-  id: '/',
-  path: '/',
+  id: "/",
+  path: "/",
   getParentRoute: () => DashboardRouteRoute,
-} as any)
+} as any);
 const DashboardUsersRoute = DashboardUsersRouteImport.update({
-  id: '/users',
-  path: '/users',
+  id: "/users",
+  path: "/users",
   getParentRoute: () => DashboardRouteRoute,
-} as any)
+} as any);
 const DashboardStatusPagesRouteRoute =
   DashboardStatusPagesRouteRouteImport.update({
-    id: '/status-pages',
-    path: '/status-pages',
+    id: "/status-pages",
+    path: "/status-pages",
     getParentRoute: () => DashboardRouteRoute,
-  } as any)
+  } as any);
 const DashboardSettingsRouteRoute = DashboardSettingsRouteRouteImport.update({
-  id: '/settings',
-  path: '/settings',
+  id: "/settings",
+  path: "/settings",
   getParentRoute: () => DashboardRouteRoute,
-} as any)
+} as any);
 const DashboardMonitorsRouteRoute = DashboardMonitorsRouteRouteImport.update({
-  id: '/monitors',
-  path: '/monitors',
+  id: "/monitors",
+  path: "/monitors",
   getParentRoute: () => DashboardRouteRoute,
-} as any)
+} as any);
 const DashboardIntegrationsRouteRoute =
   DashboardIntegrationsRouteRouteImport.update({
-    id: '/integrations',
-    path: '/integrations',
+    id: "/integrations",
+    path: "/integrations",
     getParentRoute: () => DashboardRouteRoute,
-  } as any)
+  } as any);
 const DashboardIncidentsRouteRoute = DashboardIncidentsRouteRouteImport.update({
-  id: '/incidents',
-  path: '/incidents',
+  id: "/incidents",
+  path: "/incidents",
   getParentRoute: () => DashboardRouteRoute,
-} as any)
+} as any);
 const DashboardStatusPagesIndexRoute =
   DashboardStatusPagesIndexRouteImport.update({
-    id: '/',
-    path: '/',
+    id: "/",
+    path: "/",
     getParentRoute: () => DashboardStatusPagesRouteRoute,
-  } as any)
+  } as any);
 const DashboardSettingsIndexRoute = DashboardSettingsIndexRouteImport.update({
-  id: '/',
-  path: '/',
+  id: "/",
+  path: "/",
   getParentRoute: () => DashboardSettingsRouteRoute,
-} as any)
+} as any);
 const DashboardMonitorsIndexRoute = DashboardMonitorsIndexRouteImport.update({
-  id: '/',
-  path: '/',
+  id: "/",
+  path: "/",
   getParentRoute: () => DashboardMonitorsRouteRoute,
-} as any)
+} as any);
 const DashboardIntegrationsIndexRoute =
   DashboardIntegrationsIndexRouteImport.update({
-    id: '/',
-    path: '/',
+    id: "/",
+    path: "/",
     getParentRoute: () => DashboardIntegrationsRouteRoute,
-  } as any)
+  } as any);
 const DashboardIncidentsIndexRoute = DashboardIncidentsIndexRouteImport.update({
-  id: '/',
-  path: '/',
+  id: "/",
+  path: "/",
   getParentRoute: () => DashboardIncidentsRouteRoute,
-} as any)
+} as any);
 const DashboardStatusPagesNewRoute = DashboardStatusPagesNewRouteImport.update({
-  id: '/new',
-  path: '/new',
+  id: "/new",
+  path: "/new",
   getParentRoute: () => DashboardStatusPagesRouteRoute,
-} as any)
+} as any);
 const DashboardSettingsGeneralRoute =
   DashboardSettingsGeneralRouteImport.update({
-    id: '/general',
-    path: '/general',
+    id: "/general",
+    path: "/general",
     getParentRoute: () => DashboardSettingsRouteRoute,
-  } as any)
+  } as any);
 const DashboardSettingsDeleteRoute = DashboardSettingsDeleteRouteImport.update({
-  id: '/delete',
-  path: '/delete',
+  id: "/delete",
+  path: "/delete",
   getParentRoute: () => DashboardSettingsRouteRoute,
-} as any)
+} as any);
 const DashboardMonitorsNewRoute = DashboardMonitorsNewRouteImport.update({
-  id: '/new',
-  path: '/new',
+  id: "/new",
+  path: "/new",
   getParentRoute: () => DashboardMonitorsRouteRoute,
-} as any)
+} as any);
 const DashboardIntegrationsWebhookRoute =
   DashboardIntegrationsWebhookRouteImport.update({
-    id: '/webhook',
-    path: '/webhook',
+    id: "/webhook",
+    path: "/webhook",
     getParentRoute: () => DashboardIntegrationsRouteRoute,
-  } as any)
+  } as any);
 const DashboardIntegrationsTwiliosmsRoute =
   DashboardIntegrationsTwiliosmsRouteImport.update({
-    id: '/twiliosms',
-    path: '/twiliosms',
+    id: "/twiliosms",
+    path: "/twiliosms",
     getParentRoute: () => DashboardIntegrationsRouteRoute,
-  } as any)
+  } as any);
 const DashboardIntegrationsTelegramRoute =
   DashboardIntegrationsTelegramRouteImport.update({
-    id: '/telegram',
-    path: '/telegram',
+    id: "/telegram",
+    path: "/telegram",
     getParentRoute: () => DashboardIntegrationsRouteRoute,
-  } as any)
+  } as any);
 const DashboardIntegrationsTeamsRoute =
   DashboardIntegrationsTeamsRouteImport.update({
-    id: '/teams',
-    path: '/teams',
+    id: "/teams",
+    path: "/teams",
     getParentRoute: () => DashboardIntegrationsRouteRoute,
-  } as any)
+  } as any);
 const DashboardIntegrationsSlackRoute =
   DashboardIntegrationsSlackRouteImport.update({
-    id: '/slack',
-    path: '/slack',
+    id: "/slack",
+    path: "/slack",
     getParentRoute: () => DashboardIntegrationsRouteRoute,
-  } as any)
+  } as any);
 const DashboardIntegrationsPagerdutyRoute =
   DashboardIntegrationsPagerdutyRouteImport.update({
-    id: '/pagerduty',
-    path: '/pagerduty',
+    id: "/pagerduty",
+    path: "/pagerduty",
     getParentRoute: () => DashboardIntegrationsRouteRoute,
-  } as any)
+  } as any);
 const DashboardIntegrationsGooglechatRoute =
   DashboardIntegrationsGooglechatRouteImport.update({
-    id: '/googlechat',
-    path: '/googlechat',
+    id: "/googlechat",
+    path: "/googlechat",
     getParentRoute: () => DashboardIntegrationsRouteRoute,
-  } as any)
+  } as any);
 const DashboardIntegrationsEmailRoute =
   DashboardIntegrationsEmailRouteImport.update({
-    id: '/email',
-    path: '/email',
+    id: "/email",
+    path: "/email",
     getParentRoute: () => DashboardIntegrationsRouteRoute,
-  } as any)
+  } as any);
 const DashboardIntegrationsDiscordRoute =
   DashboardIntegrationsDiscordRouteImport.update({
-    id: '/discord',
-    path: '/discord',
+    id: "/discord",
+    path: "/discord",
     getParentRoute: () => DashboardIntegrationsRouteRoute,
-  } as any)
+  } as any);
 const DashboardIncidentsIncidentIdRoute =
   DashboardIncidentsIncidentIdRouteImport.update({
-    id: '/$incidentId',
-    path: '/$incidentId',
+    id: "/$incidentId",
+    path: "/$incidentId",
     getParentRoute: () => DashboardIncidentsRouteRoute,
-  } as any)
+  } as any);
 const AuthGoogleCallbackRoute = AuthGoogleCallbackRouteImport.update({
-  id: '/auth/google/callback',
-  path: '/auth/google/callback',
+  id: "/auth/google/callback",
+  path: "/auth/google/callback",
   getParentRoute: () => rootRouteImport,
-} as any)
+} as any);
 const DashboardStatusPagesSlugRouteRoute =
   DashboardStatusPagesSlugRouteRouteImport.update({
-    id: '/$slug',
-    path: '/$slug',
+    id: "/$slug",
+    path: "/$slug",
     getParentRoute: () => DashboardStatusPagesRouteRoute,
-  } as any)
+  } as any);
 const DashboardMonitorsMonitorIdRouteRoute =
   DashboardMonitorsMonitorIdRouteRouteImport.update({
-    id: '/$monitorId',
-    path: '/$monitorId',
+    id: "/$monitorId",
+    path: "/$monitorId",
     getParentRoute: () => DashboardMonitorsRouteRoute,
-  } as any)
+  } as any);
 const DashboardStatusPagesSlugIndexRoute =
   DashboardStatusPagesSlugIndexRouteImport.update({
-    id: '/',
-    path: '/',
+    id: "/",
+    path: "/",
     getParentRoute: () => DashboardStatusPagesSlugRouteRoute,
-  } as any)
+  } as any);
 const DashboardMonitorsMonitorIdIndexRoute =
   DashboardMonitorsMonitorIdIndexRouteImport.update({
-    id: '/',
-    path: '/',
+    id: "/",
+    path: "/",
     getParentRoute: () => DashboardMonitorsMonitorIdRouteRoute,
-  } as any)
+  } as any);
 const DashboardStatusPagesSlugMonitorsRoute =
   DashboardStatusPagesSlugMonitorsRouteImport.update({
-    id: '/monitors',
-    path: '/monitors',
+    id: "/monitors",
+    path: "/monitors",
     getParentRoute: () => DashboardStatusPagesSlugRouteRoute,
-  } as any)
+  } as any);
 const DashboardStatusPagesSlugDeleteRoute =
   DashboardStatusPagesSlugDeleteRouteImport.update({
-    id: '/delete',
-    path: '/delete',
+    id: "/delete",
+    path: "/delete",
     getParentRoute: () => DashboardStatusPagesSlugRouteRoute,
-  } as any)
+  } as any);
 const DashboardStatusPagesSlugCustomizationsRoute =
   DashboardStatusPagesSlugCustomizationsRouteImport.update({
-    id: '/customizations',
-    path: '/customizations',
+    id: "/customizations",
+    path: "/customizations",
     getParentRoute: () => DashboardStatusPagesSlugRouteRoute,
-  } as any)
+  } as any);
 const DashboardMonitorsMonitorIdSettingsRoute =
   DashboardMonitorsMonitorIdSettingsRouteImport.update({
-    id: '/settings',
-    path: '/settings',
+    id: "/settings",
+    path: "/settings",
     getParentRoute: () => DashboardMonitorsMonitorIdRouteRoute,
-  } as any)
+  } as any);
 const DashboardMonitorsMonitorIdNotificationsRoute =
   DashboardMonitorsMonitorIdNotificationsRouteImport.update({
-    id: '/notifications',
-    path: '/notifications',
+    id: "/notifications",
+    path: "/notifications",
     getParentRoute: () => DashboardMonitorsMonitorIdRouteRoute,
-  } as any)
+  } as any);
 const DashboardMonitorsMonitorIdDeleteRoute =
   DashboardMonitorsMonitorIdDeleteRouteImport.update({
-    id: '/delete',
-    path: '/delete',
+    id: "/delete",
+    path: "/delete",
     getParentRoute: () => DashboardMonitorsMonitorIdRouteRoute,
-  } as any)
+  } as any);
 
 export interface FileRoutesByFullPath {
-  '/': typeof IndexRoute
-  '/dashboard': typeof DashboardRouteRouteWithChildren
-  '/login': typeof LoginRoute
-  '/signup': typeof SignupRoute
-  '/dashboard/incidents': typeof DashboardIncidentsRouteRouteWithChildren
-  '/dashboard/integrations': typeof DashboardIntegrationsRouteRouteWithChildren
-  '/dashboard/monitors': typeof DashboardMonitorsRouteRouteWithChildren
-  '/dashboard/settings': typeof DashboardSettingsRouteRouteWithChildren
-  '/dashboard/status-pages': typeof DashboardStatusPagesRouteRouteWithChildren
-  '/dashboard/users': typeof DashboardUsersRoute
-  '/dashboard/': typeof DashboardIndexRoute
-  '/dashboard/monitors/$monitorId': typeof DashboardMonitorsMonitorIdRouteRouteWithChildren
-  '/dashboard/status-pages/$slug': typeof DashboardStatusPagesSlugRouteRouteWithChildren
-  '/auth/google/callback': typeof AuthGoogleCallbackRoute
-  '/dashboard/incidents/$incidentId': typeof DashboardIncidentsIncidentIdRoute
-  '/dashboard/integrations/discord': typeof DashboardIntegrationsDiscordRoute
-  '/dashboard/integrations/email': typeof DashboardIntegrationsEmailRoute
-  '/dashboard/integrations/googlechat': typeof DashboardIntegrationsGooglechatRoute
-  '/dashboard/integrations/pagerduty': typeof DashboardIntegrationsPagerdutyRoute
-  '/dashboard/integrations/slack': typeof DashboardIntegrationsSlackRoute
-  '/dashboard/integrations/teams': typeof DashboardIntegrationsTeamsRoute
-  '/dashboard/integrations/telegram': typeof DashboardIntegrationsTelegramRoute
-  '/dashboard/integrations/twiliosms': typeof DashboardIntegrationsTwiliosmsRoute
-  '/dashboard/integrations/webhook': typeof DashboardIntegrationsWebhookRoute
-  '/dashboard/monitors/new': typeof DashboardMonitorsNewRoute
-  '/dashboard/settings/delete': typeof DashboardSettingsDeleteRoute
-  '/dashboard/settings/general': typeof DashboardSettingsGeneralRoute
-  '/dashboard/status-pages/new': typeof DashboardStatusPagesNewRoute
-  '/dashboard/incidents/': typeof DashboardIncidentsIndexRoute
-  '/dashboard/integrations/': typeof DashboardIntegrationsIndexRoute
-  '/dashboard/monitors/': typeof DashboardMonitorsIndexRoute
-  '/dashboard/settings/': typeof DashboardSettingsIndexRoute
-  '/dashboard/status-pages/': typeof DashboardStatusPagesIndexRoute
-  '/dashboard/monitors/$monitorId/delete': typeof DashboardMonitorsMonitorIdDeleteRoute
-  '/dashboard/monitors/$monitorId/notifications': typeof DashboardMonitorsMonitorIdNotificationsRoute
-  '/dashboard/monitors/$monitorId/settings': typeof DashboardMonitorsMonitorIdSettingsRoute
-  '/dashboard/status-pages/$slug/customizations': typeof DashboardStatusPagesSlugCustomizationsRoute
-  '/dashboard/status-pages/$slug/delete': typeof DashboardStatusPagesSlugDeleteRoute
-  '/dashboard/status-pages/$slug/monitors': typeof DashboardStatusPagesSlugMonitorsRoute
-  '/dashboard/monitors/$monitorId/': typeof DashboardMonitorsMonitorIdIndexRoute
-  '/dashboard/status-pages/$slug/': typeof DashboardStatusPagesSlugIndexRoute
+  "/": typeof IndexRoute;
+  "/dashboard": typeof DashboardRouteRouteWithChildren;
+  "/login": typeof LoginRoute;
+  "/signup": typeof SignupRoute;
+  "/dashboard/incidents": typeof DashboardIncidentsRouteRouteWithChildren;
+  "/dashboard/integrations": typeof DashboardIntegrationsRouteRouteWithChildren;
+  "/dashboard/monitors": typeof DashboardMonitorsRouteRouteWithChildren;
+  "/dashboard/settings": typeof DashboardSettingsRouteRouteWithChildren;
+  "/dashboard/status-pages": typeof DashboardStatusPagesRouteRouteWithChildren;
+  "/dashboard/users": typeof DashboardUsersRoute;
+  "/dashboard/": typeof DashboardIndexRoute;
+  "/dashboard/monitors/$monitorId": typeof DashboardMonitorsMonitorIdRouteRouteWithChildren;
+  "/dashboard/status-pages/$slug": typeof DashboardStatusPagesSlugRouteRouteWithChildren;
+  "/auth/google/callback": typeof AuthGoogleCallbackRoute;
+  "/dashboard/incidents/$incidentId": typeof DashboardIncidentsIncidentIdRoute;
+  "/dashboard/integrations/discord": typeof DashboardIntegrationsDiscordRoute;
+  "/dashboard/integrations/email": typeof DashboardIntegrationsEmailRoute;
+  "/dashboard/integrations/googlechat": typeof DashboardIntegrationsGooglechatRoute;
+  "/dashboard/integrations/pagerduty": typeof DashboardIntegrationsPagerdutyRoute;
+  "/dashboard/integrations/slack": typeof DashboardIntegrationsSlackRoute;
+  "/dashboard/integrations/teams": typeof DashboardIntegrationsTeamsRoute;
+  "/dashboard/integrations/telegram": typeof DashboardIntegrationsTelegramRoute;
+  "/dashboard/integrations/twiliosms": typeof DashboardIntegrationsTwiliosmsRoute;
+  "/dashboard/integrations/webhook": typeof DashboardIntegrationsWebhookRoute;
+  "/dashboard/monitors/new": typeof DashboardMonitorsNewRoute;
+  "/dashboard/settings/delete": typeof DashboardSettingsDeleteRoute;
+  "/dashboard/settings/general": typeof DashboardSettingsGeneralRoute;
+  "/dashboard/status-pages/new": typeof DashboardStatusPagesNewRoute;
+  "/dashboard/incidents/": typeof DashboardIncidentsIndexRoute;
+  "/dashboard/integrations/": typeof DashboardIntegrationsIndexRoute;
+  "/dashboard/monitors/": typeof DashboardMonitorsIndexRoute;
+  "/dashboard/settings/": typeof DashboardSettingsIndexRoute;
+  "/dashboard/status-pages/": typeof DashboardStatusPagesIndexRoute;
+  "/dashboard/monitors/$monitorId/delete": typeof DashboardMonitorsMonitorIdDeleteRoute;
+  "/dashboard/monitors/$monitorId/notifications": typeof DashboardMonitorsMonitorIdNotificationsRoute;
+  "/dashboard/monitors/$monitorId/settings": typeof DashboardMonitorsMonitorIdSettingsRoute;
+  "/dashboard/status-pages/$slug/customizations": typeof DashboardStatusPagesSlugCustomizationsRoute;
+  "/dashboard/status-pages/$slug/delete": typeof DashboardStatusPagesSlugDeleteRoute;
+  "/dashboard/status-pages/$slug/monitors": typeof DashboardStatusPagesSlugMonitorsRoute;
+  "/dashboard/monitors/$monitorId/": typeof DashboardMonitorsMonitorIdIndexRoute;
+  "/dashboard/status-pages/$slug/": typeof DashboardStatusPagesSlugIndexRoute;
 }
 export interface FileRoutesByTo {
-  '/': typeof IndexRoute
-  '/login': typeof LoginRoute
-  '/signup': typeof SignupRoute
-  '/dashboard/users': typeof DashboardUsersRoute
-  '/dashboard': typeof DashboardIndexRoute
-  '/auth/google/callback': typeof AuthGoogleCallbackRoute
-  '/dashboard/incidents/$incidentId': typeof DashboardIncidentsIncidentIdRoute
-  '/dashboard/integrations/discord': typeof DashboardIntegrationsDiscordRoute
-  '/dashboard/integrations/email': typeof DashboardIntegrationsEmailRoute
-  '/dashboard/integrations/googlechat': typeof DashboardIntegrationsGooglechatRoute
-  '/dashboard/integrations/pagerduty': typeof DashboardIntegrationsPagerdutyRoute
-  '/dashboard/integrations/slack': typeof DashboardIntegrationsSlackRoute
-  '/dashboard/integrations/teams': typeof DashboardIntegrationsTeamsRoute
-  '/dashboard/integrations/telegram': typeof DashboardIntegrationsTelegramRoute
-  '/dashboard/integrations/twiliosms': typeof DashboardIntegrationsTwiliosmsRoute
-  '/dashboard/integrations/webhook': typeof DashboardIntegrationsWebhookRoute
-  '/dashboard/monitors/new': typeof DashboardMonitorsNewRoute
-  '/dashboard/settings/delete': typeof DashboardSettingsDeleteRoute
-  '/dashboard/settings/general': typeof DashboardSettingsGeneralRoute
-  '/dashboard/status-pages/new': typeof DashboardStatusPagesNewRoute
-  '/dashboard/incidents': typeof DashboardIncidentsIndexRoute
-  '/dashboard/integrations': typeof DashboardIntegrationsIndexRoute
-  '/dashboard/monitors': typeof DashboardMonitorsIndexRoute
-  '/dashboard/settings': typeof DashboardSettingsIndexRoute
-  '/dashboard/status-pages': typeof DashboardStatusPagesIndexRoute
-  '/dashboard/monitors/$monitorId/delete': typeof DashboardMonitorsMonitorIdDeleteRoute
-  '/dashboard/monitors/$monitorId/notifications': typeof DashboardMonitorsMonitorIdNotificationsRoute
-  '/dashboard/monitors/$monitorId/settings': typeof DashboardMonitorsMonitorIdSettingsRoute
-  '/dashboard/status-pages/$slug/customizations': typeof DashboardStatusPagesSlugCustomizationsRoute
-  '/dashboard/status-pages/$slug/delete': typeof DashboardStatusPagesSlugDeleteRoute
-  '/dashboard/status-pages/$slug/monitors': typeof DashboardStatusPagesSlugMonitorsRoute
-  '/dashboard/monitors/$monitorId': typeof DashboardMonitorsMonitorIdIndexRoute
-  '/dashboard/status-pages/$slug': typeof DashboardStatusPagesSlugIndexRoute
+  "/": typeof IndexRoute;
+  "/login": typeof LoginRoute;
+  "/signup": typeof SignupRoute;
+  "/dashboard/users": typeof DashboardUsersRoute;
+  "/dashboard": typeof DashboardIndexRoute;
+  "/auth/google/callback": typeof AuthGoogleCallbackRoute;
+  "/dashboard/incidents/$incidentId": typeof DashboardIncidentsIncidentIdRoute;
+  "/dashboard/integrations/discord": typeof DashboardIntegrationsDiscordRoute;
+  "/dashboard/integrations/email": typeof DashboardIntegrationsEmailRoute;
+  "/dashboard/integrations/googlechat": typeof DashboardIntegrationsGooglechatRoute;
+  "/dashboard/integrations/pagerduty": typeof DashboardIntegrationsPagerdutyRoute;
+  "/dashboard/integrations/slack": typeof DashboardIntegrationsSlackRoute;
+  "/dashboard/integrations/teams": typeof DashboardIntegrationsTeamsRoute;
+  "/dashboard/integrations/telegram": typeof DashboardIntegrationsTelegramRoute;
+  "/dashboard/integrations/twiliosms": typeof DashboardIntegrationsTwiliosmsRoute;
+  "/dashboard/integrations/webhook": typeof DashboardIntegrationsWebhookRoute;
+  "/dashboard/monitors/new": typeof DashboardMonitorsNewRoute;
+  "/dashboard/settings/delete": typeof DashboardSettingsDeleteRoute;
+  "/dashboard/settings/general": typeof DashboardSettingsGeneralRoute;
+  "/dashboard/status-pages/new": typeof DashboardStatusPagesNewRoute;
+  "/dashboard/incidents": typeof DashboardIncidentsIndexRoute;
+  "/dashboard/integrations": typeof DashboardIntegrationsIndexRoute;
+  "/dashboard/monitors": typeof DashboardMonitorsIndexRoute;
+  "/dashboard/settings": typeof DashboardSettingsIndexRoute;
+  "/dashboard/status-pages": typeof DashboardStatusPagesIndexRoute;
+  "/dashboard/monitors/$monitorId/delete": typeof DashboardMonitorsMonitorIdDeleteRoute;
+  "/dashboard/monitors/$monitorId/notifications": typeof DashboardMonitorsMonitorIdNotificationsRoute;
+  "/dashboard/monitors/$monitorId/settings": typeof DashboardMonitorsMonitorIdSettingsRoute;
+  "/dashboard/status-pages/$slug/customizations": typeof DashboardStatusPagesSlugCustomizationsRoute;
+  "/dashboard/status-pages/$slug/delete": typeof DashboardStatusPagesSlugDeleteRoute;
+  "/dashboard/status-pages/$slug/monitors": typeof DashboardStatusPagesSlugMonitorsRoute;
+  "/dashboard/monitors/$monitorId": typeof DashboardMonitorsMonitorIdIndexRoute;
+  "/dashboard/status-pages/$slug": typeof DashboardStatusPagesSlugIndexRoute;
 }
 export interface FileRoutesById {
-  __root__: typeof rootRouteImport
-  '/': typeof IndexRoute
-  '/dashboard': typeof DashboardRouteRouteWithChildren
-  '/login': typeof LoginRoute
-  '/signup': typeof SignupRoute
-  '/dashboard/incidents': typeof DashboardIncidentsRouteRouteWithChildren
-  '/dashboard/integrations': typeof DashboardIntegrationsRouteRouteWithChildren
-  '/dashboard/monitors': typeof DashboardMonitorsRouteRouteWithChildren
-  '/dashboard/settings': typeof DashboardSettingsRouteRouteWithChildren
-  '/dashboard/status-pages': typeof DashboardStatusPagesRouteRouteWithChildren
-  '/dashboard/users': typeof DashboardUsersRoute
-  '/dashboard/': typeof DashboardIndexRoute
-  '/dashboard/monitors/$monitorId': typeof DashboardMonitorsMonitorIdRouteRouteWithChildren
-  '/dashboard/status-pages/$slug': typeof DashboardStatusPagesSlugRouteRouteWithChildren
-  '/auth/google/callback': typeof AuthGoogleCallbackRoute
-  '/dashboard/incidents/$incidentId': typeof DashboardIncidentsIncidentIdRoute
-  '/dashboard/integrations/discord': typeof DashboardIntegrationsDiscordRoute
-  '/dashboard/integrations/email': typeof DashboardIntegrationsEmailRoute
-  '/dashboard/integrations/googlechat': typeof DashboardIntegrationsGooglechatRoute
-  '/dashboard/integrations/pagerduty': typeof DashboardIntegrationsPagerdutyRoute
-  '/dashboard/integrations/slack': typeof DashboardIntegrationsSlackRoute
-  '/dashboard/integrations/teams': typeof DashboardIntegrationsTeamsRoute
-  '/dashboard/integrations/telegram': typeof DashboardIntegrationsTelegramRoute
-  '/dashboard/integrations/twiliosms': typeof DashboardIntegrationsTwiliosmsRoute
-  '/dashboard/integrations/webhook': typeof DashboardIntegrationsWebhookRoute
-  '/dashboard/monitors/new': typeof DashboardMonitorsNewRoute
-  '/dashboard/settings/delete': typeof DashboardSettingsDeleteRoute
-  '/dashboard/settings/general': typeof DashboardSettingsGeneralRoute
-  '/dashboard/status-pages/new': typeof DashboardStatusPagesNewRoute
-  '/dashboard/incidents/': typeof DashboardIncidentsIndexRoute
-  '/dashboard/integrations/': typeof DashboardIntegrationsIndexRoute
-  '/dashboard/monitors/': typeof DashboardMonitorsIndexRoute
-  '/dashboard/settings/': typeof DashboardSettingsIndexRoute
-  '/dashboard/status-pages/': typeof DashboardStatusPagesIndexRoute
-  '/dashboard/monitors/$monitorId/delete': typeof DashboardMonitorsMonitorIdDeleteRoute
-  '/dashboard/monitors/$monitorId/notifications': typeof DashboardMonitorsMonitorIdNotificationsRoute
-  '/dashboard/monitors/$monitorId/settings': typeof DashboardMonitorsMonitorIdSettingsRoute
-  '/dashboard/status-pages/$slug/customizations': typeof DashboardStatusPagesSlugCustomizationsRoute
-  '/dashboard/status-pages/$slug/delete': typeof DashboardStatusPagesSlugDeleteRoute
-  '/dashboard/status-pages/$slug/monitors': typeof DashboardStatusPagesSlugMonitorsRoute
-  '/dashboard/monitors/$monitorId/': typeof DashboardMonitorsMonitorIdIndexRoute
-  '/dashboard/status-pages/$slug/': typeof DashboardStatusPagesSlugIndexRoute
+  __root__: typeof rootRouteImport;
+  "/": typeof IndexRoute;
+  "/dashboard": typeof DashboardRouteRouteWithChildren;
+  "/login": typeof LoginRoute;
+  "/signup": typeof SignupRoute;
+  "/dashboard/incidents": typeof DashboardIncidentsRouteRouteWithChildren;
+  "/dashboard/integrations": typeof DashboardIntegrationsRouteRouteWithChildren;
+  "/dashboard/monitors": typeof DashboardMonitorsRouteRouteWithChildren;
+  "/dashboard/settings": typeof DashboardSettingsRouteRouteWithChildren;
+  "/dashboard/status-pages": typeof DashboardStatusPagesRouteRouteWithChildren;
+  "/dashboard/users": typeof DashboardUsersRoute;
+  "/dashboard/": typeof DashboardIndexRoute;
+  "/dashboard/monitors/$monitorId": typeof DashboardMonitorsMonitorIdRouteRouteWithChildren;
+  "/dashboard/status-pages/$slug": typeof DashboardStatusPagesSlugRouteRouteWithChildren;
+  "/auth/google/callback": typeof AuthGoogleCallbackRoute;
+  "/dashboard/incidents/$incidentId": typeof DashboardIncidentsIncidentIdRoute;
+  "/dashboard/integrations/discord": typeof DashboardIntegrationsDiscordRoute;
+  "/dashboard/integrations/email": typeof DashboardIntegrationsEmailRoute;
+  "/dashboard/integrations/googlechat": typeof DashboardIntegrationsGooglechatRoute;
+  "/dashboard/integrations/pagerduty": typeof DashboardIntegrationsPagerdutyRoute;
+  "/dashboard/integrations/slack": typeof DashboardIntegrationsSlackRoute;
+  "/dashboard/integrations/teams": typeof DashboardIntegrationsTeamsRoute;
+  "/dashboard/integrations/telegram": typeof DashboardIntegrationsTelegramRoute;
+  "/dashboard/integrations/twiliosms": typeof DashboardIntegrationsTwiliosmsRoute;
+  "/dashboard/integrations/webhook": typeof DashboardIntegrationsWebhookRoute;
+  "/dashboard/monitors/new": typeof DashboardMonitorsNewRoute;
+  "/dashboard/settings/delete": typeof DashboardSettingsDeleteRoute;
+  "/dashboard/settings/general": typeof DashboardSettingsGeneralRoute;
+  "/dashboard/status-pages/new": typeof DashboardStatusPagesNewRoute;
+  "/dashboard/incidents/": typeof DashboardIncidentsIndexRoute;
+  "/dashboard/integrations/": typeof DashboardIntegrationsIndexRoute;
+  "/dashboard/monitors/": typeof DashboardMonitorsIndexRoute;
+  "/dashboard/settings/": typeof DashboardSettingsIndexRoute;
+  "/dashboard/status-pages/": typeof DashboardStatusPagesIndexRoute;
+  "/dashboard/monitors/$monitorId/delete": typeof DashboardMonitorsMonitorIdDeleteRoute;
+  "/dashboard/monitors/$monitorId/notifications": typeof DashboardMonitorsMonitorIdNotificationsRoute;
+  "/dashboard/monitors/$monitorId/settings": typeof DashboardMonitorsMonitorIdSettingsRoute;
+  "/dashboard/status-pages/$slug/customizations": typeof DashboardStatusPagesSlugCustomizationsRoute;
+  "/dashboard/status-pages/$slug/delete": typeof DashboardStatusPagesSlugDeleteRoute;
+  "/dashboard/status-pages/$slug/monitors": typeof DashboardStatusPagesSlugMonitorsRoute;
+  "/dashboard/monitors/$monitorId/": typeof DashboardMonitorsMonitorIdIndexRoute;
+  "/dashboard/status-pages/$slug/": typeof DashboardStatusPagesSlugIndexRoute;
 }
 export interface FileRouteTypes {
-  fileRoutesByFullPath: FileRoutesByFullPath
+  fileRoutesByFullPath: FileRoutesByFullPath;
   fullPaths:
-    | '/'
-    | '/dashboard'
-    | '/login'
-    | '/signup'
-    | '/dashboard/incidents'
-    | '/dashboard/integrations'
-    | '/dashboard/monitors'
-    | '/dashboard/settings'
-    | '/dashboard/status-pages'
-    | '/dashboard/users'
-    | '/dashboard/'
-    | '/dashboard/monitors/$monitorId'
-    | '/dashboard/status-pages/$slug'
-    | '/auth/google/callback'
-    | '/dashboard/incidents/$incidentId'
-    | '/dashboard/integrations/discord'
-    | '/dashboard/integrations/email'
-    | '/dashboard/integrations/googlechat'
-    | '/dashboard/integrations/pagerduty'
-    | '/dashboard/integrations/slack'
-    | '/dashboard/integrations/teams'
-    | '/dashboard/integrations/telegram'
-    | '/dashboard/integrations/twiliosms'
-    | '/dashboard/integrations/webhook'
-    | '/dashboard/monitors/new'
-    | '/dashboard/settings/delete'
-    | '/dashboard/settings/general'
-    | '/dashboard/status-pages/new'
-    | '/dashboard/incidents/'
-    | '/dashboard/integrations/'
-    | '/dashboard/monitors/'
-    | '/dashboard/settings/'
-    | '/dashboard/status-pages/'
-    | '/dashboard/monitors/$monitorId/delete'
-    | '/dashboard/monitors/$monitorId/notifications'
-    | '/dashboard/monitors/$monitorId/settings'
-    | '/dashboard/status-pages/$slug/customizations'
-    | '/dashboard/status-pages/$slug/delete'
-    | '/dashboard/status-pages/$slug/monitors'
-    | '/dashboard/monitors/$monitorId/'
-    | '/dashboard/status-pages/$slug/'
-  fileRoutesByTo: FileRoutesByTo
+    | "/"
+    | "/dashboard"
+    | "/login"
+    | "/signup"
+    | "/dashboard/incidents"
+    | "/dashboard/integrations"
+    | "/dashboard/monitors"
+    | "/dashboard/settings"
+    | "/dashboard/status-pages"
+    | "/dashboard/users"
+    | "/dashboard/"
+    | "/dashboard/monitors/$monitorId"
+    | "/dashboard/status-pages/$slug"
+    | "/auth/google/callback"
+    | "/dashboard/incidents/$incidentId"
+    | "/dashboard/integrations/discord"
+    | "/dashboard/integrations/email"
+    | "/dashboard/integrations/googlechat"
+    | "/dashboard/integrations/pagerduty"
+    | "/dashboard/integrations/slack"
+    | "/dashboard/integrations/teams"
+    | "/dashboard/integrations/telegram"
+    | "/dashboard/integrations/twiliosms"
+    | "/dashboard/integrations/webhook"
+    | "/dashboard/monitors/new"
+    | "/dashboard/settings/delete"
+    | "/dashboard/settings/general"
+    | "/dashboard/status-pages/new"
+    | "/dashboard/incidents/"
+    | "/dashboard/integrations/"
+    | "/dashboard/monitors/"
+    | "/dashboard/settings/"
+    | "/dashboard/status-pages/"
+    | "/dashboard/monitors/$monitorId/delete"
+    | "/dashboard/monitors/$monitorId/notifications"
+    | "/dashboard/monitors/$monitorId/settings"
+    | "/dashboard/status-pages/$slug/customizations"
+    | "/dashboard/status-pages/$slug/delete"
+    | "/dashboard/status-pages/$slug/monitors"
+    | "/dashboard/monitors/$monitorId/"
+    | "/dashboard/status-pages/$slug/";
+  fileRoutesByTo: FileRoutesByTo;
   to:
-    | '/'
-    | '/login'
-    | '/signup'
-    | '/dashboard/users'
-    | '/dashboard'
-    | '/auth/google/callback'
-    | '/dashboard/incidents/$incidentId'
-    | '/dashboard/integrations/discord'
-    | '/dashboard/integrations/email'
-    | '/dashboard/integrations/googlechat'
-    | '/dashboard/integrations/pagerduty'
-    | '/dashboard/integrations/slack'
-    | '/dashboard/integrations/teams'
-    | '/dashboard/integrations/telegram'
-    | '/dashboard/integrations/twiliosms'
-    | '/dashboard/integrations/webhook'
-    | '/dashboard/monitors/new'
-    | '/dashboard/settings/delete'
-    | '/dashboard/settings/general'
-    | '/dashboard/status-pages/new'
-    | '/dashboard/incidents'
-    | '/dashboard/integrations'
-    | '/dashboard/monitors'
-    | '/dashboard/settings'
-    | '/dashboard/status-pages'
-    | '/dashboard/monitors/$monitorId/delete'
-    | '/dashboard/monitors/$monitorId/notifications'
-    | '/dashboard/monitors/$monitorId/settings'
-    | '/dashboard/status-pages/$slug/customizations'
-    | '/dashboard/status-pages/$slug/delete'
-    | '/dashboard/status-pages/$slug/monitors'
-    | '/dashboard/monitors/$monitorId'
-    | '/dashboard/status-pages/$slug'
+    | "/"
+    | "/login"
+    | "/signup"
+    | "/dashboard/users"
+    | "/dashboard"
+    | "/auth/google/callback"
+    | "/dashboard/incidents/$incidentId"
+    | "/dashboard/integrations/discord"
+    | "/dashboard/integrations/email"
+    | "/dashboard/integrations/googlechat"
+    | "/dashboard/integrations/pagerduty"
+    | "/dashboard/integrations/slack"
+    | "/dashboard/integrations/teams"
+    | "/dashboard/integrations/telegram"
+    | "/dashboard/integrations/twiliosms"
+    | "/dashboard/integrations/webhook"
+    | "/dashboard/monitors/new"
+    | "/dashboard/settings/delete"
+    | "/dashboard/settings/general"
+    | "/dashboard/status-pages/new"
+    | "/dashboard/incidents"
+    | "/dashboard/integrations"
+    | "/dashboard/monitors"
+    | "/dashboard/settings"
+    | "/dashboard/status-pages"
+    | "/dashboard/monitors/$monitorId/delete"
+    | "/dashboard/monitors/$monitorId/notifications"
+    | "/dashboard/monitors/$monitorId/settings"
+    | "/dashboard/status-pages/$slug/customizations"
+    | "/dashboard/status-pages/$slug/delete"
+    | "/dashboard/status-pages/$slug/monitors"
+    | "/dashboard/monitors/$monitorId"
+    | "/dashboard/status-pages/$slug";
   id:
-    | '__root__'
-    | '/'
-    | '/dashboard'
-    | '/login'
-    | '/signup'
-    | '/dashboard/incidents'
-    | '/dashboard/integrations'
-    | '/dashboard/monitors'
-    | '/dashboard/settings'
-    | '/dashboard/status-pages'
-    | '/dashboard/users'
-    | '/dashboard/'
-    | '/dashboard/monitors/$monitorId'
-    | '/dashboard/status-pages/$slug'
-    | '/auth/google/callback'
-    | '/dashboard/incidents/$incidentId'
-    | '/dashboard/integrations/discord'
-    | '/dashboard/integrations/email'
-    | '/dashboard/integrations/googlechat'
-    | '/dashboard/integrations/pagerduty'
-    | '/dashboard/integrations/slack'
-    | '/dashboard/integrations/teams'
-    | '/dashboard/integrations/telegram'
-    | '/dashboard/integrations/twiliosms'
-    | '/dashboard/integrations/webhook'
-    | '/dashboard/monitors/new'
-    | '/dashboard/settings/delete'
-    | '/dashboard/settings/general'
-    | '/dashboard/status-pages/new'
-    | '/dashboard/incidents/'
-    | '/dashboard/integrations/'
-    | '/dashboard/monitors/'
-    | '/dashboard/settings/'
-    | '/dashboard/status-pages/'
-    | '/dashboard/monitors/$monitorId/delete'
-    | '/dashboard/monitors/$monitorId/notifications'
-    | '/dashboard/monitors/$monitorId/settings'
-    | '/dashboard/status-pages/$slug/customizations'
-    | '/dashboard/status-pages/$slug/delete'
-    | '/dashboard/status-pages/$slug/monitors'
-    | '/dashboard/monitors/$monitorId/'
-    | '/dashboard/status-pages/$slug/'
-  fileRoutesById: FileRoutesById
+    | "__root__"
+    | "/"
+    | "/dashboard"
+    | "/login"
+    | "/signup"
+    | "/dashboard/incidents"
+    | "/dashboard/integrations"
+    | "/dashboard/monitors"
+    | "/dashboard/settings"
+    | "/dashboard/status-pages"
+    | "/dashboard/users"
+    | "/dashboard/"
+    | "/dashboard/monitors/$monitorId"
+    | "/dashboard/status-pages/$slug"
+    | "/auth/google/callback"
+    | "/dashboard/incidents/$incidentId"
+    | "/dashboard/integrations/discord"
+    | "/dashboard/integrations/email"
+    | "/dashboard/integrations/googlechat"
+    | "/dashboard/integrations/pagerduty"
+    | "/dashboard/integrations/slack"
+    | "/dashboard/integrations/teams"
+    | "/dashboard/integrations/telegram"
+    | "/dashboard/integrations/twiliosms"
+    | "/dashboard/integrations/webhook"
+    | "/dashboard/monitors/new"
+    | "/dashboard/settings/delete"
+    | "/dashboard/settings/general"
+    | "/dashboard/status-pages/new"
+    | "/dashboard/incidents/"
+    | "/dashboard/integrations/"
+    | "/dashboard/monitors/"
+    | "/dashboard/settings/"
+    | "/dashboard/status-pages/"
+    | "/dashboard/monitors/$monitorId/delete"
+    | "/dashboard/monitors/$monitorId/notifications"
+    | "/dashboard/monitors/$monitorId/settings"
+    | "/dashboard/status-pages/$slug/customizations"
+    | "/dashboard/status-pages/$slug/delete"
+    | "/dashboard/status-pages/$slug/monitors"
+    | "/dashboard/monitors/$monitorId/"
+    | "/dashboard/status-pages/$slug/";
+  fileRoutesById: FileRoutesById;
 }
 export interface RootRouteChildren {
-  IndexRoute: typeof IndexRoute
-  DashboardRouteRoute: typeof DashboardRouteRouteWithChildren
-  LoginRoute: typeof LoginRoute
-  SignupRoute: typeof SignupRoute
-  AuthGoogleCallbackRoute: typeof AuthGoogleCallbackRoute
+  IndexRoute: typeof IndexRoute;
+  DashboardRouteRoute: typeof DashboardRouteRouteWithChildren;
+  LoginRoute: typeof LoginRoute;
+  SignupRoute: typeof SignupRoute;
+  AuthGoogleCallbackRoute: typeof AuthGoogleCallbackRoute;
 }
 
-declare module '@tanstack/react-router' {
+declare module "@tanstack/react-router" {
   interface FileRoutesByPath {
-    '/signup': {
-      id: '/signup'
-      path: '/signup'
-      fullPath: '/signup'
-      preLoaderRoute: typeof SignupRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/login': {
-      id: '/login'
-      path: '/login'
-      fullPath: '/login'
-      preLoaderRoute: typeof LoginRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/dashboard': {
-      id: '/dashboard'
-      path: '/dashboard'
-      fullPath: '/dashboard'
-      preLoaderRoute: typeof DashboardRouteRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
-      preLoaderRoute: typeof IndexRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/dashboard/': {
-      id: '/dashboard/'
-      path: '/'
-      fullPath: '/dashboard/'
-      preLoaderRoute: typeof DashboardIndexRouteImport
-      parentRoute: typeof DashboardRouteRoute
-    }
-    '/dashboard/users': {
-      id: '/dashboard/users'
-      path: '/users'
-      fullPath: '/dashboard/users'
-      preLoaderRoute: typeof DashboardUsersRouteImport
-      parentRoute: typeof DashboardRouteRoute
-    }
-    '/dashboard/status-pages': {
-      id: '/dashboard/status-pages'
-      path: '/status-pages'
-      fullPath: '/dashboard/status-pages'
-      preLoaderRoute: typeof DashboardStatusPagesRouteRouteImport
-      parentRoute: typeof DashboardRouteRoute
-    }
-    '/dashboard/settings': {
-      id: '/dashboard/settings'
-      path: '/settings'
-      fullPath: '/dashboard/settings'
-      preLoaderRoute: typeof DashboardSettingsRouteRouteImport
-      parentRoute: typeof DashboardRouteRoute
-    }
-    '/dashboard/monitors': {
-      id: '/dashboard/monitors'
-      path: '/monitors'
-      fullPath: '/dashboard/monitors'
-      preLoaderRoute: typeof DashboardMonitorsRouteRouteImport
-      parentRoute: typeof DashboardRouteRoute
-    }
-    '/dashboard/integrations': {
-      id: '/dashboard/integrations'
-      path: '/integrations'
-      fullPath: '/dashboard/integrations'
-      preLoaderRoute: typeof DashboardIntegrationsRouteRouteImport
-      parentRoute: typeof DashboardRouteRoute
-    }
-    '/dashboard/incidents': {
-      id: '/dashboard/incidents'
-      path: '/incidents'
-      fullPath: '/dashboard/incidents'
-      preLoaderRoute: typeof DashboardIncidentsRouteRouteImport
-      parentRoute: typeof DashboardRouteRoute
-    }
-    '/dashboard/status-pages/': {
-      id: '/dashboard/status-pages/'
-      path: '/'
-      fullPath: '/dashboard/status-pages/'
-      preLoaderRoute: typeof DashboardStatusPagesIndexRouteImport
-      parentRoute: typeof DashboardStatusPagesRouteRoute
-    }
-    '/dashboard/settings/': {
-      id: '/dashboard/settings/'
-      path: '/'
-      fullPath: '/dashboard/settings/'
-      preLoaderRoute: typeof DashboardSettingsIndexRouteImport
-      parentRoute: typeof DashboardSettingsRouteRoute
-    }
-    '/dashboard/monitors/': {
-      id: '/dashboard/monitors/'
-      path: '/'
-      fullPath: '/dashboard/monitors/'
-      preLoaderRoute: typeof DashboardMonitorsIndexRouteImport
-      parentRoute: typeof DashboardMonitorsRouteRoute
-    }
-    '/dashboard/integrations/': {
-      id: '/dashboard/integrations/'
-      path: '/'
-      fullPath: '/dashboard/integrations/'
-      preLoaderRoute: typeof DashboardIntegrationsIndexRouteImport
-      parentRoute: typeof DashboardIntegrationsRouteRoute
-    }
-    '/dashboard/incidents/': {
-      id: '/dashboard/incidents/'
-      path: '/'
-      fullPath: '/dashboard/incidents/'
-      preLoaderRoute: typeof DashboardIncidentsIndexRouteImport
-      parentRoute: typeof DashboardIncidentsRouteRoute
-    }
-    '/dashboard/status-pages/new': {
-      id: '/dashboard/status-pages/new'
-      path: '/new'
-      fullPath: '/dashboard/status-pages/new'
-      preLoaderRoute: typeof DashboardStatusPagesNewRouteImport
-      parentRoute: typeof DashboardStatusPagesRouteRoute
-    }
-    '/dashboard/settings/general': {
-      id: '/dashboard/settings/general'
-      path: '/general'
-      fullPath: '/dashboard/settings/general'
-      preLoaderRoute: typeof DashboardSettingsGeneralRouteImport
-      parentRoute: typeof DashboardSettingsRouteRoute
-    }
-    '/dashboard/settings/delete': {
-      id: '/dashboard/settings/delete'
-      path: '/delete'
-      fullPath: '/dashboard/settings/delete'
-      preLoaderRoute: typeof DashboardSettingsDeleteRouteImport
-      parentRoute: typeof DashboardSettingsRouteRoute
-    }
-    '/dashboard/monitors/new': {
-      id: '/dashboard/monitors/new'
-      path: '/new'
-      fullPath: '/dashboard/monitors/new'
-      preLoaderRoute: typeof DashboardMonitorsNewRouteImport
-      parentRoute: typeof DashboardMonitorsRouteRoute
-    }
-    '/dashboard/integrations/webhook': {
-      id: '/dashboard/integrations/webhook'
-      path: '/webhook'
-      fullPath: '/dashboard/integrations/webhook'
-      preLoaderRoute: typeof DashboardIntegrationsWebhookRouteImport
-      parentRoute: typeof DashboardIntegrationsRouteRoute
-    }
-    '/dashboard/integrations/twiliosms': {
-      id: '/dashboard/integrations/twiliosms'
-      path: '/twiliosms'
-      fullPath: '/dashboard/integrations/twiliosms'
-      preLoaderRoute: typeof DashboardIntegrationsTwiliosmsRouteImport
-      parentRoute: typeof DashboardIntegrationsRouteRoute
-    }
-    '/dashboard/integrations/telegram': {
-      id: '/dashboard/integrations/telegram'
-      path: '/telegram'
-      fullPath: '/dashboard/integrations/telegram'
-      preLoaderRoute: typeof DashboardIntegrationsTelegramRouteImport
-      parentRoute: typeof DashboardIntegrationsRouteRoute
-    }
-    '/dashboard/integrations/teams': {
-      id: '/dashboard/integrations/teams'
-      path: '/teams'
-      fullPath: '/dashboard/integrations/teams'
-      preLoaderRoute: typeof DashboardIntegrationsTeamsRouteImport
-      parentRoute: typeof DashboardIntegrationsRouteRoute
-    }
-    '/dashboard/integrations/slack': {
-      id: '/dashboard/integrations/slack'
-      path: '/slack'
-      fullPath: '/dashboard/integrations/slack'
-      preLoaderRoute: typeof DashboardIntegrationsSlackRouteImport
-      parentRoute: typeof DashboardIntegrationsRouteRoute
-    }
-    '/dashboard/integrations/pagerduty': {
-      id: '/dashboard/integrations/pagerduty'
-      path: '/pagerduty'
-      fullPath: '/dashboard/integrations/pagerduty'
-      preLoaderRoute: typeof DashboardIntegrationsPagerdutyRouteImport
-      parentRoute: typeof DashboardIntegrationsRouteRoute
-    }
-    '/dashboard/integrations/googlechat': {
-      id: '/dashboard/integrations/googlechat'
-      path: '/googlechat'
-      fullPath: '/dashboard/integrations/googlechat'
-      preLoaderRoute: typeof DashboardIntegrationsGooglechatRouteImport
-      parentRoute: typeof DashboardIntegrationsRouteRoute
-    }
-    '/dashboard/integrations/email': {
-      id: '/dashboard/integrations/email'
-      path: '/email'
-      fullPath: '/dashboard/integrations/email'
-      preLoaderRoute: typeof DashboardIntegrationsEmailRouteImport
-      parentRoute: typeof DashboardIntegrationsRouteRoute
-    }
-    '/dashboard/integrations/discord': {
-      id: '/dashboard/integrations/discord'
-      path: '/discord'
-      fullPath: '/dashboard/integrations/discord'
-      preLoaderRoute: typeof DashboardIntegrationsDiscordRouteImport
-      parentRoute: typeof DashboardIntegrationsRouteRoute
-    }
-    '/dashboard/incidents/$incidentId': {
-      id: '/dashboard/incidents/$incidentId'
-      path: '/$incidentId'
-      fullPath: '/dashboard/incidents/$incidentId'
-      preLoaderRoute: typeof DashboardIncidentsIncidentIdRouteImport
-      parentRoute: typeof DashboardIncidentsRouteRoute
-    }
-    '/auth/google/callback': {
-      id: '/auth/google/callback'
-      path: '/auth/google/callback'
-      fullPath: '/auth/google/callback'
-      preLoaderRoute: typeof AuthGoogleCallbackRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/dashboard/status-pages/$slug': {
-      id: '/dashboard/status-pages/$slug'
-      path: '/$slug'
-      fullPath: '/dashboard/status-pages/$slug'
-      preLoaderRoute: typeof DashboardStatusPagesSlugRouteRouteImport
-      parentRoute: typeof DashboardStatusPagesRouteRoute
-    }
-    '/dashboard/monitors/$monitorId': {
-      id: '/dashboard/monitors/$monitorId'
-      path: '/$monitorId'
-      fullPath: '/dashboard/monitors/$monitorId'
-      preLoaderRoute: typeof DashboardMonitorsMonitorIdRouteRouteImport
-      parentRoute: typeof DashboardMonitorsRouteRoute
-    }
-    '/dashboard/status-pages/$slug/': {
-      id: '/dashboard/status-pages/$slug/'
-      path: '/'
-      fullPath: '/dashboard/status-pages/$slug/'
-      preLoaderRoute: typeof DashboardStatusPagesSlugIndexRouteImport
-      parentRoute: typeof DashboardStatusPagesSlugRouteRoute
-    }
-    '/dashboard/monitors/$monitorId/': {
-      id: '/dashboard/monitors/$monitorId/'
-      path: '/'
-      fullPath: '/dashboard/monitors/$monitorId/'
-      preLoaderRoute: typeof DashboardMonitorsMonitorIdIndexRouteImport
-      parentRoute: typeof DashboardMonitorsMonitorIdRouteRoute
-    }
-    '/dashboard/status-pages/$slug/monitors': {
-      id: '/dashboard/status-pages/$slug/monitors'
-      path: '/monitors'
-      fullPath: '/dashboard/status-pages/$slug/monitors'
-      preLoaderRoute: typeof DashboardStatusPagesSlugMonitorsRouteImport
-      parentRoute: typeof DashboardStatusPagesSlugRouteRoute
-    }
-    '/dashboard/status-pages/$slug/delete': {
-      id: '/dashboard/status-pages/$slug/delete'
-      path: '/delete'
-      fullPath: '/dashboard/status-pages/$slug/delete'
-      preLoaderRoute: typeof DashboardStatusPagesSlugDeleteRouteImport
-      parentRoute: typeof DashboardStatusPagesSlugRouteRoute
-    }
-    '/dashboard/status-pages/$slug/customizations': {
-      id: '/dashboard/status-pages/$slug/customizations'
-      path: '/customizations'
-      fullPath: '/dashboard/status-pages/$slug/customizations'
-      preLoaderRoute: typeof DashboardStatusPagesSlugCustomizationsRouteImport
-      parentRoute: typeof DashboardStatusPagesSlugRouteRoute
-    }
-    '/dashboard/monitors/$monitorId/settings': {
-      id: '/dashboard/monitors/$monitorId/settings'
-      path: '/settings'
-      fullPath: '/dashboard/monitors/$monitorId/settings'
-      preLoaderRoute: typeof DashboardMonitorsMonitorIdSettingsRouteImport
-      parentRoute: typeof DashboardMonitorsMonitorIdRouteRoute
-    }
-    '/dashboard/monitors/$monitorId/notifications': {
-      id: '/dashboard/monitors/$monitorId/notifications'
-      path: '/notifications'
-      fullPath: '/dashboard/monitors/$monitorId/notifications'
-      preLoaderRoute: typeof DashboardMonitorsMonitorIdNotificationsRouteImport
-      parentRoute: typeof DashboardMonitorsMonitorIdRouteRoute
-    }
-    '/dashboard/monitors/$monitorId/delete': {
-      id: '/dashboard/monitors/$monitorId/delete'
-      path: '/delete'
-      fullPath: '/dashboard/monitors/$monitorId/delete'
-      preLoaderRoute: typeof DashboardMonitorsMonitorIdDeleteRouteImport
-      parentRoute: typeof DashboardMonitorsMonitorIdRouteRoute
-    }
+    "/signup": {
+      id: "/signup";
+      path: "/signup";
+      fullPath: "/signup";
+      preLoaderRoute: typeof SignupRouteImport;
+      parentRoute: typeof rootRouteImport;
+    };
+    "/login": {
+      id: "/login";
+      path: "/login";
+      fullPath: "/login";
+      preLoaderRoute: typeof LoginRouteImport;
+      parentRoute: typeof rootRouteImport;
+    };
+    "/dashboard": {
+      id: "/dashboard";
+      path: "/dashboard";
+      fullPath: "/dashboard";
+      preLoaderRoute: typeof DashboardRouteRouteImport;
+      parentRoute: typeof rootRouteImport;
+    };
+    "/": {
+      id: "/";
+      path: "/";
+      fullPath: "/";
+      preLoaderRoute: typeof IndexRouteImport;
+      parentRoute: typeof rootRouteImport;
+    };
+    "/dashboard/": {
+      id: "/dashboard/";
+      path: "/";
+      fullPath: "/dashboard/";
+      preLoaderRoute: typeof DashboardIndexRouteImport;
+      parentRoute: typeof DashboardRouteRoute;
+    };
+    "/dashboard/users": {
+      id: "/dashboard/users";
+      path: "/users";
+      fullPath: "/dashboard/users";
+      preLoaderRoute: typeof DashboardUsersRouteImport;
+      parentRoute: typeof DashboardRouteRoute;
+    };
+    "/dashboard/status-pages": {
+      id: "/dashboard/status-pages";
+      path: "/status-pages";
+      fullPath: "/dashboard/status-pages";
+      preLoaderRoute: typeof DashboardStatusPagesRouteRouteImport;
+      parentRoute: typeof DashboardRouteRoute;
+    };
+    "/dashboard/settings": {
+      id: "/dashboard/settings";
+      path: "/settings";
+      fullPath: "/dashboard/settings";
+      preLoaderRoute: typeof DashboardSettingsRouteRouteImport;
+      parentRoute: typeof DashboardRouteRoute;
+    };
+    "/dashboard/monitors": {
+      id: "/dashboard/monitors";
+      path: "/monitors";
+      fullPath: "/dashboard/monitors";
+      preLoaderRoute: typeof DashboardMonitorsRouteRouteImport;
+      parentRoute: typeof DashboardRouteRoute;
+    };
+    "/dashboard/integrations": {
+      id: "/dashboard/integrations";
+      path: "/integrations";
+      fullPath: "/dashboard/integrations";
+      preLoaderRoute: typeof DashboardIntegrationsRouteRouteImport;
+      parentRoute: typeof DashboardRouteRoute;
+    };
+    "/dashboard/incidents": {
+      id: "/dashboard/incidents";
+      path: "/incidents";
+      fullPath: "/dashboard/incidents";
+      preLoaderRoute: typeof DashboardIncidentsRouteRouteImport;
+      parentRoute: typeof DashboardRouteRoute;
+    };
+    "/dashboard/status-pages/": {
+      id: "/dashboard/status-pages/";
+      path: "/";
+      fullPath: "/dashboard/status-pages/";
+      preLoaderRoute: typeof DashboardStatusPagesIndexRouteImport;
+      parentRoute: typeof DashboardStatusPagesRouteRoute;
+    };
+    "/dashboard/settings/": {
+      id: "/dashboard/settings/";
+      path: "/";
+      fullPath: "/dashboard/settings/";
+      preLoaderRoute: typeof DashboardSettingsIndexRouteImport;
+      parentRoute: typeof DashboardSettingsRouteRoute;
+    };
+    "/dashboard/monitors/": {
+      id: "/dashboard/monitors/";
+      path: "/";
+      fullPath: "/dashboard/monitors/";
+      preLoaderRoute: typeof DashboardMonitorsIndexRouteImport;
+      parentRoute: typeof DashboardMonitorsRouteRoute;
+    };
+    "/dashboard/integrations/": {
+      id: "/dashboard/integrations/";
+      path: "/";
+      fullPath: "/dashboard/integrations/";
+      preLoaderRoute: typeof DashboardIntegrationsIndexRouteImport;
+      parentRoute: typeof DashboardIntegrationsRouteRoute;
+    };
+    "/dashboard/incidents/": {
+      id: "/dashboard/incidents/";
+      path: "/";
+      fullPath: "/dashboard/incidents/";
+      preLoaderRoute: typeof DashboardIncidentsIndexRouteImport;
+      parentRoute: typeof DashboardIncidentsRouteRoute;
+    };
+    "/dashboard/status-pages/new": {
+      id: "/dashboard/status-pages/new";
+      path: "/new";
+      fullPath: "/dashboard/status-pages/new";
+      preLoaderRoute: typeof DashboardStatusPagesNewRouteImport;
+      parentRoute: typeof DashboardStatusPagesRouteRoute;
+    };
+    "/dashboard/settings/general": {
+      id: "/dashboard/settings/general";
+      path: "/general";
+      fullPath: "/dashboard/settings/general";
+      preLoaderRoute: typeof DashboardSettingsGeneralRouteImport;
+      parentRoute: typeof DashboardSettingsRouteRoute;
+    };
+    "/dashboard/settings/delete": {
+      id: "/dashboard/settings/delete";
+      path: "/delete";
+      fullPath: "/dashboard/settings/delete";
+      preLoaderRoute: typeof DashboardSettingsDeleteRouteImport;
+      parentRoute: typeof DashboardSettingsRouteRoute;
+    };
+    "/dashboard/monitors/new": {
+      id: "/dashboard/monitors/new";
+      path: "/new";
+      fullPath: "/dashboard/monitors/new";
+      preLoaderRoute: typeof DashboardMonitorsNewRouteImport;
+      parentRoute: typeof DashboardMonitorsRouteRoute;
+    };
+    "/dashboard/integrations/webhook": {
+      id: "/dashboard/integrations/webhook";
+      path: "/webhook";
+      fullPath: "/dashboard/integrations/webhook";
+      preLoaderRoute: typeof DashboardIntegrationsWebhookRouteImport;
+      parentRoute: typeof DashboardIntegrationsRouteRoute;
+    };
+    "/dashboard/integrations/twiliosms": {
+      id: "/dashboard/integrations/twiliosms";
+      path: "/twiliosms";
+      fullPath: "/dashboard/integrations/twiliosms";
+      preLoaderRoute: typeof DashboardIntegrationsTwiliosmsRouteImport;
+      parentRoute: typeof DashboardIntegrationsRouteRoute;
+    };
+    "/dashboard/integrations/telegram": {
+      id: "/dashboard/integrations/telegram";
+      path: "/telegram";
+      fullPath: "/dashboard/integrations/telegram";
+      preLoaderRoute: typeof DashboardIntegrationsTelegramRouteImport;
+      parentRoute: typeof DashboardIntegrationsRouteRoute;
+    };
+    "/dashboard/integrations/teams": {
+      id: "/dashboard/integrations/teams";
+      path: "/teams";
+      fullPath: "/dashboard/integrations/teams";
+      preLoaderRoute: typeof DashboardIntegrationsTeamsRouteImport;
+      parentRoute: typeof DashboardIntegrationsRouteRoute;
+    };
+    "/dashboard/integrations/slack": {
+      id: "/dashboard/integrations/slack";
+      path: "/slack";
+      fullPath: "/dashboard/integrations/slack";
+      preLoaderRoute: typeof DashboardIntegrationsSlackRouteImport;
+      parentRoute: typeof DashboardIntegrationsRouteRoute;
+    };
+    "/dashboard/integrations/pagerduty": {
+      id: "/dashboard/integrations/pagerduty";
+      path: "/pagerduty";
+      fullPath: "/dashboard/integrations/pagerduty";
+      preLoaderRoute: typeof DashboardIntegrationsPagerdutyRouteImport;
+      parentRoute: typeof DashboardIntegrationsRouteRoute;
+    };
+    "/dashboard/integrations/googlechat": {
+      id: "/dashboard/integrations/googlechat";
+      path: "/googlechat";
+      fullPath: "/dashboard/integrations/googlechat";
+      preLoaderRoute: typeof DashboardIntegrationsGooglechatRouteImport;
+      parentRoute: typeof DashboardIntegrationsRouteRoute;
+    };
+    "/dashboard/integrations/email": {
+      id: "/dashboard/integrations/email";
+      path: "/email";
+      fullPath: "/dashboard/integrations/email";
+      preLoaderRoute: typeof DashboardIntegrationsEmailRouteImport;
+      parentRoute: typeof DashboardIntegrationsRouteRoute;
+    };
+    "/dashboard/integrations/discord": {
+      id: "/dashboard/integrations/discord";
+      path: "/discord";
+      fullPath: "/dashboard/integrations/discord";
+      preLoaderRoute: typeof DashboardIntegrationsDiscordRouteImport;
+      parentRoute: typeof DashboardIntegrationsRouteRoute;
+    };
+    "/dashboard/incidents/$incidentId": {
+      id: "/dashboard/incidents/$incidentId";
+      path: "/$incidentId";
+      fullPath: "/dashboard/incidents/$incidentId";
+      preLoaderRoute: typeof DashboardIncidentsIncidentIdRouteImport;
+      parentRoute: typeof DashboardIncidentsRouteRoute;
+    };
+    "/auth/google/callback": {
+      id: "/auth/google/callback";
+      path: "/auth/google/callback";
+      fullPath: "/auth/google/callback";
+      preLoaderRoute: typeof AuthGoogleCallbackRouteImport;
+      parentRoute: typeof rootRouteImport;
+    };
+    "/dashboard/status-pages/$slug": {
+      id: "/dashboard/status-pages/$slug";
+      path: "/$slug";
+      fullPath: "/dashboard/status-pages/$slug";
+      preLoaderRoute: typeof DashboardStatusPagesSlugRouteRouteImport;
+      parentRoute: typeof DashboardStatusPagesRouteRoute;
+    };
+    "/dashboard/monitors/$monitorId": {
+      id: "/dashboard/monitors/$monitorId";
+      path: "/$monitorId";
+      fullPath: "/dashboard/monitors/$monitorId";
+      preLoaderRoute: typeof DashboardMonitorsMonitorIdRouteRouteImport;
+      parentRoute: typeof DashboardMonitorsRouteRoute;
+    };
+    "/dashboard/status-pages/$slug/": {
+      id: "/dashboard/status-pages/$slug/";
+      path: "/";
+      fullPath: "/dashboard/status-pages/$slug/";
+      preLoaderRoute: typeof DashboardStatusPagesSlugIndexRouteImport;
+      parentRoute: typeof DashboardStatusPagesSlugRouteRoute;
+    };
+    "/dashboard/monitors/$monitorId/": {
+      id: "/dashboard/monitors/$monitorId/";
+      path: "/";
+      fullPath: "/dashboard/monitors/$monitorId/";
+      preLoaderRoute: typeof DashboardMonitorsMonitorIdIndexRouteImport;
+      parentRoute: typeof DashboardMonitorsMonitorIdRouteRoute;
+    };
+    "/dashboard/status-pages/$slug/monitors": {
+      id: "/dashboard/status-pages/$slug/monitors";
+      path: "/monitors";
+      fullPath: "/dashboard/status-pages/$slug/monitors";
+      preLoaderRoute: typeof DashboardStatusPagesSlugMonitorsRouteImport;
+      parentRoute: typeof DashboardStatusPagesSlugRouteRoute;
+    };
+    "/dashboard/status-pages/$slug/delete": {
+      id: "/dashboard/status-pages/$slug/delete";
+      path: "/delete";
+      fullPath: "/dashboard/status-pages/$slug/delete";
+      preLoaderRoute: typeof DashboardStatusPagesSlugDeleteRouteImport;
+      parentRoute: typeof DashboardStatusPagesSlugRouteRoute;
+    };
+    "/dashboard/status-pages/$slug/customizations": {
+      id: "/dashboard/status-pages/$slug/customizations";
+      path: "/customizations";
+      fullPath: "/dashboard/status-pages/$slug/customizations";
+      preLoaderRoute: typeof DashboardStatusPagesSlugCustomizationsRouteImport;
+      parentRoute: typeof DashboardStatusPagesSlugRouteRoute;
+    };
+    "/dashboard/monitors/$monitorId/settings": {
+      id: "/dashboard/monitors/$monitorId/settings";
+      path: "/settings";
+      fullPath: "/dashboard/monitors/$monitorId/settings";
+      preLoaderRoute: typeof DashboardMonitorsMonitorIdSettingsRouteImport;
+      parentRoute: typeof DashboardMonitorsMonitorIdRouteRoute;
+    };
+    "/dashboard/monitors/$monitorId/notifications": {
+      id: "/dashboard/monitors/$monitorId/notifications";
+      path: "/notifications";
+      fullPath: "/dashboard/monitors/$monitorId/notifications";
+      preLoaderRoute: typeof DashboardMonitorsMonitorIdNotificationsRouteImport;
+      parentRoute: typeof DashboardMonitorsMonitorIdRouteRoute;
+    };
+    "/dashboard/monitors/$monitorId/delete": {
+      id: "/dashboard/monitors/$monitorId/delete";
+      path: "/delete";
+      fullPath: "/dashboard/monitors/$monitorId/delete";
+      preLoaderRoute: typeof DashboardMonitorsMonitorIdDeleteRouteImport;
+      parentRoute: typeof DashboardMonitorsMonitorIdRouteRoute;
+    };
   }
 }
 
 interface DashboardIncidentsRouteRouteChildren {
-  DashboardIncidentsIncidentIdRoute: typeof DashboardIncidentsIncidentIdRoute
-  DashboardIncidentsIndexRoute: typeof DashboardIncidentsIndexRoute
+  DashboardIncidentsIncidentIdRoute: typeof DashboardIncidentsIncidentIdRoute;
+  DashboardIncidentsIndexRoute: typeof DashboardIncidentsIndexRoute;
 }
 
 const DashboardIncidentsRouteRouteChildren: DashboardIncidentsRouteRouteChildren =
   {
     DashboardIncidentsIncidentIdRoute: DashboardIncidentsIncidentIdRoute,
     DashboardIncidentsIndexRoute: DashboardIncidentsIndexRoute,
-  }
+  };
 
 const DashboardIncidentsRouteRouteWithChildren =
   DashboardIncidentsRouteRoute._addFileChildren(
-    DashboardIncidentsRouteRouteChildren,
-  )
+    DashboardIncidentsRouteRouteChildren
+  );
 
 interface DashboardIntegrationsRouteRouteChildren {
-  DashboardIntegrationsDiscordRoute: typeof DashboardIntegrationsDiscordRoute
-  DashboardIntegrationsEmailRoute: typeof DashboardIntegrationsEmailRoute
-  DashboardIntegrationsGooglechatRoute: typeof DashboardIntegrationsGooglechatRoute
-  DashboardIntegrationsPagerdutyRoute: typeof DashboardIntegrationsPagerdutyRoute
-  DashboardIntegrationsSlackRoute: typeof DashboardIntegrationsSlackRoute
-  DashboardIntegrationsTeamsRoute: typeof DashboardIntegrationsTeamsRoute
-  DashboardIntegrationsTelegramRoute: typeof DashboardIntegrationsTelegramRoute
-  DashboardIntegrationsTwiliosmsRoute: typeof DashboardIntegrationsTwiliosmsRoute
-  DashboardIntegrationsWebhookRoute: typeof DashboardIntegrationsWebhookRoute
-  DashboardIntegrationsIndexRoute: typeof DashboardIntegrationsIndexRoute
+  DashboardIntegrationsDiscordRoute: typeof DashboardIntegrationsDiscordRoute;
+  DashboardIntegrationsEmailRoute: typeof DashboardIntegrationsEmailRoute;
+  DashboardIntegrationsGooglechatRoute: typeof DashboardIntegrationsGooglechatRoute;
+  DashboardIntegrationsPagerdutyRoute: typeof DashboardIntegrationsPagerdutyRoute;
+  DashboardIntegrationsSlackRoute: typeof DashboardIntegrationsSlackRoute;
+  DashboardIntegrationsTeamsRoute: typeof DashboardIntegrationsTeamsRoute;
+  DashboardIntegrationsTelegramRoute: typeof DashboardIntegrationsTelegramRoute;
+  DashboardIntegrationsTwiliosmsRoute: typeof DashboardIntegrationsTwiliosmsRoute;
+  DashboardIntegrationsWebhookRoute: typeof DashboardIntegrationsWebhookRoute;
+  DashboardIntegrationsIndexRoute: typeof DashboardIntegrationsIndexRoute;
 }
 
 const DashboardIntegrationsRouteRouteChildren: DashboardIntegrationsRouteRouteChildren =
@@ -869,18 +869,18 @@ const DashboardIntegrationsRouteRouteChildren: DashboardIntegrationsRouteRouteCh
     DashboardIntegrationsTwiliosmsRoute: DashboardIntegrationsTwiliosmsRoute,
     DashboardIntegrationsWebhookRoute: DashboardIntegrationsWebhookRoute,
     DashboardIntegrationsIndexRoute: DashboardIntegrationsIndexRoute,
-  }
+  };
 
 const DashboardIntegrationsRouteRouteWithChildren =
   DashboardIntegrationsRouteRoute._addFileChildren(
-    DashboardIntegrationsRouteRouteChildren,
-  )
+    DashboardIntegrationsRouteRouteChildren
+  );
 
 interface DashboardMonitorsMonitorIdRouteRouteChildren {
-  DashboardMonitorsMonitorIdDeleteRoute: typeof DashboardMonitorsMonitorIdDeleteRoute
-  DashboardMonitorsMonitorIdNotificationsRoute: typeof DashboardMonitorsMonitorIdNotificationsRoute
-  DashboardMonitorsMonitorIdSettingsRoute: typeof DashboardMonitorsMonitorIdSettingsRoute
-  DashboardMonitorsMonitorIdIndexRoute: typeof DashboardMonitorsMonitorIdIndexRoute
+  DashboardMonitorsMonitorIdDeleteRoute: typeof DashboardMonitorsMonitorIdDeleteRoute;
+  DashboardMonitorsMonitorIdNotificationsRoute: typeof DashboardMonitorsMonitorIdNotificationsRoute;
+  DashboardMonitorsMonitorIdSettingsRoute: typeof DashboardMonitorsMonitorIdSettingsRoute;
+  DashboardMonitorsMonitorIdIndexRoute: typeof DashboardMonitorsMonitorIdIndexRoute;
 }
 
 const DashboardMonitorsMonitorIdRouteRouteChildren: DashboardMonitorsMonitorIdRouteRouteChildren =
@@ -892,17 +892,17 @@ const DashboardMonitorsMonitorIdRouteRouteChildren: DashboardMonitorsMonitorIdRo
     DashboardMonitorsMonitorIdSettingsRoute:
       DashboardMonitorsMonitorIdSettingsRoute,
     DashboardMonitorsMonitorIdIndexRoute: DashboardMonitorsMonitorIdIndexRoute,
-  }
+  };
 
 const DashboardMonitorsMonitorIdRouteRouteWithChildren =
   DashboardMonitorsMonitorIdRouteRoute._addFileChildren(
-    DashboardMonitorsMonitorIdRouteRouteChildren,
-  )
+    DashboardMonitorsMonitorIdRouteRouteChildren
+  );
 
 interface DashboardMonitorsRouteRouteChildren {
-  DashboardMonitorsMonitorIdRouteRoute: typeof DashboardMonitorsMonitorIdRouteRouteWithChildren
-  DashboardMonitorsNewRoute: typeof DashboardMonitorsNewRoute
-  DashboardMonitorsIndexRoute: typeof DashboardMonitorsIndexRoute
+  DashboardMonitorsMonitorIdRouteRoute: typeof DashboardMonitorsMonitorIdRouteRouteWithChildren;
+  DashboardMonitorsNewRoute: typeof DashboardMonitorsNewRoute;
+  DashboardMonitorsIndexRoute: typeof DashboardMonitorsIndexRoute;
 }
 
 const DashboardMonitorsRouteRouteChildren: DashboardMonitorsRouteRouteChildren =
@@ -911,17 +911,17 @@ const DashboardMonitorsRouteRouteChildren: DashboardMonitorsRouteRouteChildren =
       DashboardMonitorsMonitorIdRouteRouteWithChildren,
     DashboardMonitorsNewRoute: DashboardMonitorsNewRoute,
     DashboardMonitorsIndexRoute: DashboardMonitorsIndexRoute,
-  }
+  };
 
 const DashboardMonitorsRouteRouteWithChildren =
   DashboardMonitorsRouteRoute._addFileChildren(
-    DashboardMonitorsRouteRouteChildren,
-  )
+    DashboardMonitorsRouteRouteChildren
+  );
 
 interface DashboardSettingsRouteRouteChildren {
-  DashboardSettingsDeleteRoute: typeof DashboardSettingsDeleteRoute
-  DashboardSettingsGeneralRoute: typeof DashboardSettingsGeneralRoute
-  DashboardSettingsIndexRoute: typeof DashboardSettingsIndexRoute
+  DashboardSettingsDeleteRoute: typeof DashboardSettingsDeleteRoute;
+  DashboardSettingsGeneralRoute: typeof DashboardSettingsGeneralRoute;
+  DashboardSettingsIndexRoute: typeof DashboardSettingsIndexRoute;
 }
 
 const DashboardSettingsRouteRouteChildren: DashboardSettingsRouteRouteChildren =
@@ -929,18 +929,18 @@ const DashboardSettingsRouteRouteChildren: DashboardSettingsRouteRouteChildren =
     DashboardSettingsDeleteRoute: DashboardSettingsDeleteRoute,
     DashboardSettingsGeneralRoute: DashboardSettingsGeneralRoute,
     DashboardSettingsIndexRoute: DashboardSettingsIndexRoute,
-  }
+  };
 
 const DashboardSettingsRouteRouteWithChildren =
   DashboardSettingsRouteRoute._addFileChildren(
-    DashboardSettingsRouteRouteChildren,
-  )
+    DashboardSettingsRouteRouteChildren
+  );
 
 interface DashboardStatusPagesSlugRouteRouteChildren {
-  DashboardStatusPagesSlugCustomizationsRoute: typeof DashboardStatusPagesSlugCustomizationsRoute
-  DashboardStatusPagesSlugDeleteRoute: typeof DashboardStatusPagesSlugDeleteRoute
-  DashboardStatusPagesSlugMonitorsRoute: typeof DashboardStatusPagesSlugMonitorsRoute
-  DashboardStatusPagesSlugIndexRoute: typeof DashboardStatusPagesSlugIndexRoute
+  DashboardStatusPagesSlugCustomizationsRoute: typeof DashboardStatusPagesSlugCustomizationsRoute;
+  DashboardStatusPagesSlugDeleteRoute: typeof DashboardStatusPagesSlugDeleteRoute;
+  DashboardStatusPagesSlugMonitorsRoute: typeof DashboardStatusPagesSlugMonitorsRoute;
+  DashboardStatusPagesSlugIndexRoute: typeof DashboardStatusPagesSlugIndexRoute;
 }
 
 const DashboardStatusPagesSlugRouteRouteChildren: DashboardStatusPagesSlugRouteRouteChildren =
@@ -951,17 +951,17 @@ const DashboardStatusPagesSlugRouteRouteChildren: DashboardStatusPagesSlugRouteR
     DashboardStatusPagesSlugMonitorsRoute:
       DashboardStatusPagesSlugMonitorsRoute,
     DashboardStatusPagesSlugIndexRoute: DashboardStatusPagesSlugIndexRoute,
-  }
+  };
 
 const DashboardStatusPagesSlugRouteRouteWithChildren =
   DashboardStatusPagesSlugRouteRoute._addFileChildren(
-    DashboardStatusPagesSlugRouteRouteChildren,
-  )
+    DashboardStatusPagesSlugRouteRouteChildren
+  );
 
 interface DashboardStatusPagesRouteRouteChildren {
-  DashboardStatusPagesSlugRouteRoute: typeof DashboardStatusPagesSlugRouteRouteWithChildren
-  DashboardStatusPagesNewRoute: typeof DashboardStatusPagesNewRoute
-  DashboardStatusPagesIndexRoute: typeof DashboardStatusPagesIndexRoute
+  DashboardStatusPagesSlugRouteRoute: typeof DashboardStatusPagesSlugRouteRouteWithChildren;
+  DashboardStatusPagesNewRoute: typeof DashboardStatusPagesNewRoute;
+  DashboardStatusPagesIndexRoute: typeof DashboardStatusPagesIndexRoute;
 }
 
 const DashboardStatusPagesRouteRouteChildren: DashboardStatusPagesRouteRouteChildren =
@@ -970,21 +970,21 @@ const DashboardStatusPagesRouteRouteChildren: DashboardStatusPagesRouteRouteChil
       DashboardStatusPagesSlugRouteRouteWithChildren,
     DashboardStatusPagesNewRoute: DashboardStatusPagesNewRoute,
     DashboardStatusPagesIndexRoute: DashboardStatusPagesIndexRoute,
-  }
+  };
 
 const DashboardStatusPagesRouteRouteWithChildren =
   DashboardStatusPagesRouteRoute._addFileChildren(
-    DashboardStatusPagesRouteRouteChildren,
-  )
+    DashboardStatusPagesRouteRouteChildren
+  );
 
 interface DashboardRouteRouteChildren {
-  DashboardIncidentsRouteRoute: typeof DashboardIncidentsRouteRouteWithChildren
-  DashboardIntegrationsRouteRoute: typeof DashboardIntegrationsRouteRouteWithChildren
-  DashboardMonitorsRouteRoute: typeof DashboardMonitorsRouteRouteWithChildren
-  DashboardSettingsRouteRoute: typeof DashboardSettingsRouteRouteWithChildren
-  DashboardStatusPagesRouteRoute: typeof DashboardStatusPagesRouteRouteWithChildren
-  DashboardUsersRoute: typeof DashboardUsersRoute
-  DashboardIndexRoute: typeof DashboardIndexRoute
+  DashboardIncidentsRouteRoute: typeof DashboardIncidentsRouteRouteWithChildren;
+  DashboardIntegrationsRouteRoute: typeof DashboardIntegrationsRouteRouteWithChildren;
+  DashboardMonitorsRouteRoute: typeof DashboardMonitorsRouteRouteWithChildren;
+  DashboardSettingsRouteRoute: typeof DashboardSettingsRouteRouteWithChildren;
+  DashboardStatusPagesRouteRoute: typeof DashboardStatusPagesRouteRouteWithChildren;
+  DashboardUsersRoute: typeof DashboardUsersRoute;
+  DashboardIndexRoute: typeof DashboardIndexRoute;
 }
 
 const DashboardRouteRouteChildren: DashboardRouteRouteChildren = {
@@ -995,11 +995,11 @@ const DashboardRouteRouteChildren: DashboardRouteRouteChildren = {
   DashboardStatusPagesRouteRoute: DashboardStatusPagesRouteRouteWithChildren,
   DashboardUsersRoute: DashboardUsersRoute,
   DashboardIndexRoute: DashboardIndexRoute,
-}
+};
 
 const DashboardRouteRouteWithChildren = DashboardRouteRoute._addFileChildren(
-  DashboardRouteRouteChildren,
-)
+  DashboardRouteRouteChildren
+);
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
@@ -1007,7 +1007,7 @@ const rootRouteChildren: RootRouteChildren = {
   LoginRoute: LoginRoute,
   SignupRoute: SignupRoute,
   AuthGoogleCallbackRoute: AuthGoogleCallbackRoute,
-}
+};
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
-  ._addFileTypes<FileRouteTypes>()
+  ._addFileTypes<FileRouteTypes>();
